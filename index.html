@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="content">
+            <form class="form-Cadastro">
+                <h1>Dados Cadastrais</h1>
+                <div class="full-box">
+                    <label id="email" for="email">E-mail</label>
+                    <input class="form-cadastro-input" type="email" name="email" data-min-length="3" id="email" placeholder="">
+                </div>
+                <div class="half-box spacing">
+                    <label for="nome">Nome</label>
+                    <input class="form-cadastro-input" type="text" name="name" id="nome" placeholder="">
+                </div>
+                <div class="half-box">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input class="form-cadastro-input" type="text" name="surname" id="sobrenome" placeholder="">
+                </div>
+                <div class="half-box spacing">
+                    <label for="cpf">CPF</label>
+                    <input class="form-cadastro-input" type="text" id="cpf" placeholder="">
+                </div>
+                <div class="half-box">
+                    <label  for="telefone">Telefone</label>
+                    <input class="form-cadastro-input" type="tel" id="telefone" name="phone" required/>
+                </div>
+
+                <h2>Endereço</h2>
+                <div class="full-box spacing">
+                    <label for="cep">CEP</label>
+                    <input class="form-cadastro-input" type="text" id="cep" name="zipcode" size="7" maxlength="9" placeholder="">
+                </div>
+                <div class="half-box spacing">
+                    <label for="rua">Rua</label>
+                    <input class="form-cadastro-input" type="text" id="rua" name="road">
+                </div>
+                <div class="half-box spacing">
+                    <label for="numero">Numero</label>
+                    <input class="form-cadastro-input" type="text" id="numero" name="number" size="10">
+                </div>
+                <div class="half-box spacing">
+                    <label for="complemento">Complemento</label>
+                    <input class="form-cadastro-input" type="text" id="complemento" name="complement">
+                </div>
+                <div class="half-box spacing">
+                    <label for="referencia">Referência</label>
+                    <input class="form-cadastro-input" type="text" id="referencia" name="reference">
+                </div>
+                <div class="half-box spacing">
+                    <label for="bairro">Bairro</label>
+                    <input class="form-cadastro-input" type="text" id="bairro" name="district">
+                </div>
+                <div class="half-box spacing">
+                    <label for="cidade">Cidade</label>
+                    <input class="form-cadastro-input" type="text" id="cidade" name="city">
+                </div>
+                <div class="half-box">
+                    <label for="estado">Estado</label>
+                    <input class="form-cadastro-input" type="text" id="estado" name="state">
+                </div>
+                <div class="full-box spacing">
+                    <button class="form-cadastro-button" type="button" onclick="cadastrarUsuario()">Cadastrar</button>
+                    <!--<input id="cadastrar" type="submit" value="Cadastrar">-->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-container-two">
+        <div class="content">
+            <form class="formAdicionar">
+                <h3>Produtos</h3>
+                <div class="full-box">
+                    <label for="codigo">Código</label>
+                    <input class="form-adicionar-input" type="text" id="codigo" name="codigo">
+                </div>
+                <div class="half-box spacing">
+                    <label for="descricao">Descrição</label>
+                    <input class="form-adicionar-input" type="text" id="descricao" name="descricao">
+                </div>
+                <div class="half-box spacing">
+                    <label for="categoria">Categoria</label>
+                    <input class="form-adicionar-input" type="text" id="categoria" name="categoria">
+                </div>
+                <div class="half-box spacing">
+                    <label for="subcategoria">Subcategoria</label>
+                    <input class="form-adicionar-input" type="text" id="subcategoria" name="subcategoria">
+                </div>
+                <div class="half-box spacing">
+                    <label for="marca">Marca</label>
+                    <input class="form-adicionar-input" type="text" id="marca" name="marca">
+                </div>
+                <div class="half-box spacing">
+                    <label for="modelo">Modelo</label>
+                    <input class="form-adicionar-input" type="text" id="modelo" name="modelo">
+                </div>
+                <div class="half-box spacing">
+                    <label for="custo">Custo</label>
+                    <input class="form-adicionar-input" type="text" id="custo" name="custo">
+                </div>
+                <div class="half-box spacing">
+                    <label for="varejo">Varejo</label>
+                    <input class="form-adicionar-input" type="text" id="varejo" name="varejo">
+                </div>
+                <div class="half-box spacing">
+                    <label for="atacado">Atacado</label>
+                    <input class="form-adicionar-input" type="text" id="atacado" name="atacado">
+                </div>
+                <div class="half-box spacing">
+                    <label for="quantidade">Quantidade</label>
+                    <input class="form-adicionar-input" type="text" id="quantidade" name="quantidade">
+                </div>
+                <div class="full-box spacing">
+                    <button class="form-adicionar-button" type="button" onclick="adicionarProduto()">Adicionar Produto</button>
+                    <!--<input id="adicionar" type="submit" value="Adicionar">-->
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+/* CSS geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+body {
+    padding-top: 5vh;
+    background-color: #F1EFEF;
+}
+
+/* forms */
+
+.main-container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.main-container-two {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.main-container h1, h2, h3 {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #9dc44d;
+    margin-left: 40px;
+    padding-left: 40px;
+
+    background-image: url('../img/selecao.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.half-box select {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+input {
+    border-bottom: 2px solid #F1EFEF;
+    padding: 5px;
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #111;
+}
+
+button{
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*input[type="submit"] {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+}*/
+
+@media (min-width: 370px) and (max-width: 800px) {
+    .main-container{
+        width: 710px;
+        top: 5px;
+        padding: 25px;
+    }
+
+    .main-container-two{
+        width: 710px;
+        top: 5px;
+        padding: 25px;
+        margin-bottom: 40px;
+     }
+
+    .form-Cadastro {
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-container{
+       width: 390px;
+       top: 5px;
+       padding: 25px;
+       margin: 0 auto;
+    }
+
+    .main-container-two{
+        width: 390px;
+        top: 5px;
+        padding: 25px;
+        margin-bottom: 20px;
+     }
+
+    .form-Cadastro {
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
