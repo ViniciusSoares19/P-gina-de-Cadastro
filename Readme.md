@@ -7,4 +7,4 @@
 * Quais tecnologias foram usadas? (HTML, CSS e JAVASCRIPT)
 * O que foi aprendido/exercitado durante o projeto? (erros e acertos cometido)
 * Você fem uma alteração no projeto original? Não!
-* link para projeto hospedado? ()
+* link para projeto hospedado? (https://paginadecadastro.netlify.app/)
